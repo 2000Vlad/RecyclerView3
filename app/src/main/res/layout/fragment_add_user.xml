@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".addactivity.AddUserFragment">
+
+        <EditText
+            android:id="@+id/edittext_add_user_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp32"
+            android:layout_marginBottom="@dimen/dp12"
+            android:hint="@string/user_name" />
+
+        <EditText
+            android:id="@+id/edittext_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp32"
+            android:layout_marginBottom="@dimen/dp12"
+            android:hint="@string/email_address" />
+
+        <EditText
+            android:id="@+id/edittext_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp32"
+            android:layout_marginBottom="@dimen/dp12"
+            android:hint="Phone Number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginBottom="@dimen/dp16"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radiobutton_add_user_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:text="Green" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_add_user_pink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:text="Pink" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_add_user_darkblue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:text="Dark Blue" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_add_user_orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:text="Orange" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_add_user_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:text="Black" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp32"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginBottom="@dimen/dp16"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/avatar_size"
+                    android:layout_height="@dimen/avatar_size"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:src="@drawable/ic_user1" />
+
+                <ImageView
+                    android:layout_width="@dimen/avatar_size"
+                    android:layout_height="@dimen/avatar_size"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:src="@drawable/ic_user2" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/ic_user3" />
+
+                <ImageView
+                    android:layout_width="@dimen/avatar_size"
+                    android:layout_height="@dimen/avatar_size"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/ic_user4" />
+
+                <ImageView
+                    android:layout_width="@dimen/avatar_size"
+                    android:layout_height="@dimen/avatar_size"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:src="@drawable/ic_user5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinner_add_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp32"
+                    android:layout_marginTop="@dimen/dp32"
+                    android:layout_marginRight="@dimen/dp16"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:id="@+id/button_add_user_finish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp32"
+                        android:layout_marginTop="@dimen/dp16"
+                        android:background="@color/colorAccent"
+                        android:text="Finish"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp8"
+                        android:text="Set Position" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="addactivity.AddPhotoFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/add_photo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".addactivity.AddPhotoFragment">
+
+        <EditText
+            android:id="@+id/edittext_description_add_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp8"
+            android:layout_marginTop="@dimen/dp24"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp8"
+            android:layout_marginBottom="@dimen/dp8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_description_add_photo">
+
+            <RadioButton
+                android:id="@+id/radiobutton_voyage_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp8"
+                android:layout_marginTop="@dimen/dp24"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_marginBottom="@dimen/dp24"
+                android:layout_weight="1"
+                android:text="Islands" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_voyage_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp8"
+                android:layout_marginTop="@dimen/dp24"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_marginBottom="@dimen/dp24"
+                android:layout_weight="1"
+                android:text="Colosseum" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_voyage_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp8"
+                android:layout_marginTop="@dimen/dp24"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_marginBottom="@dimen/dp24"
+                android:layout_weight="1"
+                android:text="London" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_voyage_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp8"
+                android:layout_marginTop="@dimen/dp24"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_marginBottom="@dimen/dp24"
+                android:layout_weight="1"
+                android:text="Paris" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_voyage_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp8"
+                android:layout_marginTop="@dimen/dp24"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_marginBottom="@dimen/dp24"
+                android:layout_weight="1"
+                android:text="San Francisco" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_voyage_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp8"
+                android:layout_marginTop="@dimen/dp24"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_marginBottom="@dimen/dp24"
+                android:layout_weight="1"
+                android:text="Brighton" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/voyage_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioGroup"
+            app:layout_constraintTop_toTopOf="@+id/radioGroup" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/voyage_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/voyage_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/voyage_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/voyage_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/voyage_6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <Spinner
+            android:id="@+id/spinner_add_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginEnd="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <Button
+            android:id="@+id/button_add_photo_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp8"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginEnd="@dimen/dp8"
+            android:layout_marginBottom="@dimen/dp16"
+            android:background="@color/colorAccent"
+            android:text="Finish"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp120"
+    android:layout_marginLeft="@dimen/dp8"
+    android:layout_marginTop="@dimen/dp8"
+    android:weightSum="99">
+
+    <ImageView
+        android:id="@+id/image_photo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="33"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/voyage_1" />
+
+    <TextView
+        android:id="@+id/text_photo_description"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_weight="66"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/sp16"
+        tools:text="This is sample photo description"
+
+        />
+</LinearLayout>
